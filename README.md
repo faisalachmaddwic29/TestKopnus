@@ -1,62 +1,33 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+setelah sudah di pull
+disini saya menggunakana laravel 8(terbaru)
+CARA INSTALL:
+1. composer install = untuk install package yang ada di composer
+2. buat database dengan nama mx_db
+3. php artisan migrate = untuk menjalan perintah yang ada di database->migration. akan membuat table
+4. disini saya untuk auth menggunakan jwt package dari tymon. berikut link gitlabnya : https://github.com/tymondesigns/jwt-auth
+5. php artisan jwt:secret = untuk mengenreate key jwt
+6. jika ingin mengconfig publish jwt : php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+7. php artisan serve = untuk menjalan aplikasi tersebut.
+8. oiya untuk .env sudah saya push juga ya.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Penjelasan:
+1. saya membuat 1 folder helper agar bisa modular, saya memasukan response api mungkin nanti kedepannya untuk function function yang akan dipakai dibanyak tempat bisa di taro disitu.
+2. agar bisa terbaca folder helper, harus di edit pada bagian composer.json didalam autoload-dev ditambahkan files['{nama-file}']
+3. lalu saya membuatkan 3 folder controller untuk mempermudah kedepannya jika mau dikembangkan biar tidak tercecer saat mencari bug ataupun filenya hihi xD
+4. company bisa melakukan login dan register
+5. freelancer bisa melakukan login dan register
+6. company bisa menambahkan job
+7. freelancer bisa mengapply / mendaftar pekerjaan
+8. company bisa melihat hasil upload yang sudah di daftarkan oleh pdf dalam bentuk pdf
+9. untuk melihat hasil pdf. ex : http://127.0.0.1:8000/file-pdf/1624472954-admin.pdf atau http://127.0.0.1:8000/file-pdf/{filename} 
+10. setiap freelance ataupun company jika ingin mengakses data job harus melakukan login terlebih dahulu agar dapet token lalu dimasukan ke dalam authorization -> bearer token
+11. saya membuat middleware untuk jwtauthcheck = untuk mencheck apakah data tersebut sudah terdaftar apa belum.
+12. lalu saya tambahkan kedalam kernel
+13. untuk routing saya buatin 1 folder dengan nama api untuk nanti jika ingin dikembankan lagi tinggal menambahkan folder lalu diakses sesuai dengan nama folder
+14. saya memasukan middleware bukan di route akan tetapi di APP->PROVIDERS/RouteServiceProvider.php
+15. saya membuat 1 function untuk mempermudah pemanggilan dan kerapihan codenya dengan menggunakan fungsi glob lalu di looping
 
-## About Laravel
+Berikut penjelasan saya. Terimakasih sebelumnya dan mohon maaf baru bisa dikirim sekarang dikarenakan laptop saya yang sebelumnya hilang dan harus sempat hilang semangat, tapi sekarang sudah tidak xD. Sekali lagi Terimakasih semoga suka.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Thanks,
+Faisal Achmad Dwi Cahyono
