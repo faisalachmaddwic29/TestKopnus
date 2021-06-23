@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOPNUS POS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</head>
+<style>
+    ol li{
+        margin-bottom: 2em;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5 mt-2 font-weight-bold">KOPERASI NUSANTARA</h1>
+        <p>Nama : Faisal Achmad Dwi Cahyono</p>
+        <p>Telp : 0853-3364-9029</p>
+        <p>Email: faisalachmaddwic@gmail.com</p>
+
+        <hr class="my-5">
+
+        <ol class="list-">
+            <li>
+                <div class="number1">
+                    <p>Buat Algoritma untuk membuat Pyramid Angka 10 baris, seperti gambar di bawah:</p>
+                    <p>Jawaban :</p>
+                    <div id="answer1"></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="number2">
+                    <p>Buat algoritma untuk menampilkan bilangan ganjil dan genap dari 0 – 20:</p>
+                    <p>Jawaban :</p>
+                    <div id="answer2"></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="number3">
+                    <p>Buat algoritma program untuk menentukan bilangan prima dari n_awal sampai dengan n_akhir:</p>
+                    <p>Jawaban :</p>
+                    <form id="bilPrima">
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="n_awal">Nilai Awal</label>
+                                    <input type="number" class="form-control" id="n_awal" placeholder="Nilai Awal">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="n_akhir">Nilai Akhir</label>
+                                    <input type="number" class="form-control" id="n_akhir" placeholder="Nilai Akhir">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Cari Bilangan Prima</button>
+                    </form>
+                    <div id="answer3">
+
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="number4">
+                    <p>Buat algoritman untuk menampilkan n yang di input (angka/huruf) dengan kolom sebanyak n dan baris sebanyak n.
+                        Misal input A sebanyak 2 kolom dan 3 baris</p>
+                    <p>Jawaban :</p>
+                    <form id="colRow">
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label for="inputData">Data yang di input</label>
+                                    <input type="text" class="form-control" id="inputData" placeholder="A-Z">
+                                </div>
+                            </div>
+                            <div class=
+                            "col-4">
+                                <div class="form-group">
+                                    <label for="n_kolom">Kolom</label>
+                                    <input type="number" class="form-control" id="n_kolom" placeholder="Masukan Kolom">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label for="n_baris">Baris</label>
+                                    <input type="number" class="form-control" id="n_baris" placeholder="Masukan Baris">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Buat Kolom</button>
+                    </form>
+                    <div id="answer4"></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="number5">
+                    <p>Buat algoritma program untuk menentukan bilangan terbesar dan terkecil dari jumlah data yang diinput.</p>
+                    <p>Jawaban :</p>
+                    <p>Tolong isikan inputan dibawah ini :</p>
+                    <form id="form-bilanganKecilBesar">
+                        <input type="number" class="form-control mb-2" name="n_inputBil_1" id="n_inputBil_1">
+                        <input type="number" class="form-control mb-2" name="n_inputBil_2" id="n_inputBil_2">
+                        <input type="number" class="form-control mb-2" name="n_inputBil_3" id="n_inputBil_3">
+                        <input type="number" class="form-control mb-2" name="n_inputBil_4" id="n_inputBil_4">
+                        <input type="number" class="form-control mb-2" name="n_inputBil_5" id="n_inputBil_5">
+                        <input type="number" class="form-control mb-2" name="n_inputBil_6" id="n_inputBil_6">
+                        <button type="submit" class="btn btn-primary">Hitung</button>
+                    </form>
+                    <div id="answer5"></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="number6">
+                    <p>Buat algoritma program untuk membalikkan suatu kata dari urutan depan menjadi yang terbelakang : Hello olleH</p>
+                    <p>Jawaban :</p>
+                    <form id="form-stringReverse">
+                        <input type="text" class="form-control mb-2" name="string_reverse" id="string_reverse">
+                        <button type="submit" class="btn btn-primary">Reverse</button>
+                    </form>
+                    <div id="answer6"></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="number7">
+                    <p>Buat algoritma program untuk perhitungan bilangan factorial</p>
+                    <p>Jawaban :</p>
+                    <form id="form-faktorial">
+                        <input type="number" class="form-control mb-2" name="valueFaktorial" id="valueFaktorial">
+                        <button type="submit" class="btn btn-primary">Faktorial</button>
+                    </form>
+                    <div id="answer7"></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="number8">
+                    <p>Buat algoritma program untuk menampilkan bilangan yang habis dengan bilangan tertentu dari n_awal sampai dengan n_akhir</p>
+                    <p>Jawaban :</p>
+                    <form id="form-bilanganHabis">
+                        <div class="form-group">
+                            <label for="bilanganHabis">Bilangan Habis</label>
+                            <input type="number" class="form-control mb-2" id="bilanganHabis" placeholder="Bilangan Habis">
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="n_awal_habis">Nilai Awal</label>
+                                    <input type="number" class="form-control" id="n_awal_habis" placeholder="Nilai Awal">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="n_akhir_habis">Nilai Akhir</label>
+                                    <input type="number" class="form-control" id="n_akhir_habis" placeholder="Nilai Akhir">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Tampilkan</button>
+                    </form>
+                    <div id="answer8"></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="number9">
+                    <p>Buat algoritma untuk menampilkan bilangan dari n_awal hingga n_akhir yang mengandung/mempunyai angka tertentu.</p>
+                    <p>Jawaban :</p>
+                    <form id="form-bilanganTertentu">
+                        <div class="form-group">
+                            <label for="bilanganTertentu">Bilangan Tertentu</label>
+                            <input type="number" class="form-control mb-2" id="bilanganTertentu" placeholder="Bilangan Tertentu">
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="n_awal_tertentu">Nilai Awal</label>
+                                    <input type="number" class="form-control" id="n_awal_tertentu" placeholder="Nilai Awal">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="n_akhir_tertentu">Nilai Akhir</label>
+                                    <input type="number" class="form-control" id="n_akhir_tertentu" placeholder="Nilai Akhir">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Cari Bilangan Tertentu</button>
+                    </form>
+                    <div id="answer9"></div>
+                </div>
+            </li>
+        </ol>
+    </div>
+</body>
+<script text="javascript" src="script.js"></script>
+</html>
