@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // Number 3
     function bilanganPrima(n_awal, n_akhir){
         let result = [];
-        for(let i = n_awal; i <= n_akhir; i++){
+        for(let i = parseInt(n_awal); i <= parseInt(n_akhir); i++){
             let pembagi = 0;
             for(let j = 1; j <= i; j++){
                 if(i % j == 0){
@@ -267,8 +267,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
 
         div9.innerHTML = `<div class="mt-3">
-            <p>Berikut bilangan yang mengandung di bagi ${bilangan_tertentu} : <span style="font-weight:bold">${value_bilangan_mengandung}</span></p>
-            <p>Berikut bilangan yang <strong>tidak</strong> habis di bagi ${bilangan_tertentu} : <span style="font-weight:bold">${value_bilangan_tidak_mengandung}</strong></p>
+            <p>Berikut bilangan yang mengandung angka ${bilangan_tertentu} : <span style="font-weight:bold">${value_bilangan_mengandung}</span></p>
+            <p>Berikut bilangan yang <strong>tidak mengandung</strong> habis angka ${bilangan_tertentu} : <span style="font-weight:bold">${value_bilangan_tidak_mengandung}</strong></p>
         </div>`;
 
         answer9.appendChild(div9);
